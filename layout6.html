@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>轮播图</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			li {
+				list-style: none;
+			}
+			.img-list{
+				width: 500px;
+				height: 470px;
+				margin: 100px auto;
+				position: relative;
+			}
+			.img-list li{
+				position: absolute;
+			}
+			.img-list div:not(.pointer) {
+				width: 500px;
+				height: 470px;
+			}
+			.img-list .img1 {
+				background-color: red;
+			}
+			.img-list .img2 {
+				background-color: yellow;
+			}
+			.img-list .img3 {
+				background-color: green;
+			}
+			.img-list .img4 {
+				background-color: pink;
+			}
+			.pointer{
+				position: absolute;
+				z-index: 9999;
+				/* top: 430px; */
+				bottom: 20px;
+				left: 20px;
+			}
+			.pointer a {
+				/* display: block; */
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin-left: 5px;
+				float: left;
+				background-color: rgba(255, 255, 255, 0.6);
+				border: 2px solid transparent;
+			}
+			.pointer a.active,
+			.pointer a:hover{
+				background-color: #fff;
+				border: 2px solid #9ACD32;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="img-list">
+			<li>
+				<a href="javascript:;"><div class="img1"></div></a>
+			</li>
+			<li>
+				<a href="javascript:;"><div class="img2"></div></a>
+			</li>
+			<li>
+				<a href="javascript:;"><div class="img3"></div></a>
+			</li>
+			<li>
+				<a href="javascript:;"><div class="img4"></div></a>
+			</li>
+			<div class="pointer">
+				<a class="active" href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</ul>
+	</body>
+</html>

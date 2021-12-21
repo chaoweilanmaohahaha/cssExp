@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+	</head>
+	<body>
+		<input type="text" id="username">
+		<button id="btn1" onclick="proxy[] = 0;console.log(proxy);console.log(arr)">确定</button>
+		<!-- <iframe src="https://www.sogou.com/" width="500" height="500" frameborder="0"></iframe> -->
+		<script type="text/javascript">
+			let arr = [1, 2, 3]
+				
+			// let arr = {
+			// 	0: 1
+			// }
+			let proxy = new Proxy(arr, {
+				get: function(target, property) {
+					console.log(target)
+					console.log(property)
+					return target[property]
+				},
+				set: function(target, property, value) {
+					console.log(target)
+					console.log(property)
+					target[property] = value
+				}
+			})
+		</script>
+	</body>
+</html>

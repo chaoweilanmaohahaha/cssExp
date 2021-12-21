@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新闻列表</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				background-color: #BBFFAA;
+			}
+			a {
+				text-decoration: none;
+			}
+			.news-wrapper{
+				width: 380px;
+				height: 350px;
+				background-color: #fff;
+				border-top: 1px solid #ddd;
+				margin: 50px auto;
+			}
+			.news-title{
+				height: 40px;
+				display: inline-block;
+				border-top: 1px red solid;
+				margin-top: -1px;
+			}
+			.news-title a {
+				color: #000000;
+				font-size: 14px;
+			}
+			.news-img {
+				height: 190px;
+			}
+			
+			.news-img .news-img-title {
+				margin-top: -40px;
+				padding-left: 30px;
+				color: white;
+			}
+			.news-list {
+				margin-top:10px
+			}
+			.news-list li{
+				margin: 5px;
+				padding-left: 14px;
+				list-style: none;
+			}
+			.news-list a {
+				color: #000000
+			}
+			.news-list a:hover{
+				color: red;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="news-wrapper">
+			<h2 class="news-title">
+				<a href="javascript:;">体育</a>
+			</h2>
+			<div class="news-img">
+				<a href="javascript:;">
+					<img src="img/img4.jpg" >
+					<h2 class="news-img-title">
+						这是新闻下面的介绍
+					</h2>
+				</a>
+			</div>
+			<ul class="news-list">
+				<a href="javascript:;">
+					<li>这是新闻列表第一条</li>
+				</a>
+				<a href="javascript:;">
+					<li>这是新闻列表第二条</li>
+				</a>
+				<a href="javascript:;">
+					<li>这是新闻列表第三条</li>
+				</a>
+				<a href="javascript:;">
+					<li>这是新闻列表第四条</li>
+				</a>
+			</ul>
+		</div>
+	</body>
+</html>
